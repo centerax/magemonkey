@@ -15,7 +15,7 @@ script:
   - unzip -qq 1.0.2.zip
   - wget https://github.com/squizlabs/PHP_CodeSniffer/releases/download/2.6.2/phpcs.phar && chmod +x phpcs.phar
   - ./phpcs.phar --config-set installed_paths ./marketplace-eqp-1.0.2
-  - ./phpcs.phar -n --standard="MEQP1" ./centerax/magemonkey
+  - ./phpcs.phar -n --standard="MEQP1" ./magemonkey
 
 notifications:
   slack: ebizmarts:k7A0FCTvGxkJdxsDITHlJG0Z
